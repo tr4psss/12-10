@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Activity 1&2 - [Cabriana, Raymark A.]</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"		>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<form>
+					<div class="form-group">
+						<label >Value1</label>
+						<input type="text" class="form-control" id="Val1">
+					</div>
+					<div class="form-group">
+						<label>Value2:</label>
+						<input type="text" class="form-control" id="Val2">
+					</div>
+
+					<input type="button" class="btn btn-primary" value="+ Add" onclick="addition()">
+					<input type="button" class="btn btn-primary" value="- Subtract" onclick="subtraction()">
+					<input type="button" class="btn btn-primary" value="* Multiply" onclick="multiplication()">
+					<input type="button" class="btn btn-primary" value="/ Divide" onclick="division()">
+
+
+				</form>
+				<h3>The answer is: </h3> <h3 id="result"></h3>
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>
+		<script type="text/javascript">
+			function addition()
+			{
+				var input = Number(document.getElementById("Val1").value);
+				var input2 = Number(document.getElementById("Val2").value);
+				if(isNaN(input)==false && isNaN(input2)==false)
+				{
+					var sum = input+input2;
+					document.getElementById("result").innerHTML = sum;
+				}
+				else
+				{
+					alert("Invalid Number")
+				}
+			}
+			function subtraction()
+			{
+				var input = Number(document.getElementById("Val1").value);
+				var input2 = Number(document.getElementById("Val2").value);
+				if(isNaN(input)==false && isNaN(input2)==false)
+				{
+					var sum = input-input2;
+					document.getElementById("result").innerHTML = sum;
+				}
+				else
+				{
+					alert("Invalid Number")
+				}
+			}
+			function multiplication()
+			{
+				var input = Number(document.getElementById("Val1").value);
+				var input2 = Number(document.getElementById("Val2").value);
+				if(isNaN(input)==false && isNaN(input2)==false)
+				{
+					var sum = input*input2;
+					document.getElementById("result").innerHTML = sum;
+				}
+				else
+				{
+					alert("Invalid Number")
+				}
+			}
+			function division()
+			{
+				var input = Number(document.getElementById("Val1").value);
+				var input2 = Number(document.getElementById("Val2").value);
+				if(isNaN(input)==false && isNaN(input2)==false)
+				{
+					var sum = input/input2;
+					document.getElementById("result").innerHTML = sum;
+				}
+				else
+				{
+					alert("Invalid Number")
+				}
+			}
+	</script>
+</body>
+</html>
