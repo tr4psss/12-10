@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DIVISIBLE BY 100 -JOHNREY ARCENAL</title>
+</head>
+
+<body style="background-color: skyblue">
+<center>
+	<input type="text" id="div" name="">
+	<input type="button" value="OK" onclick="result()">
+	<h2 id="money"></h2>
+</center>
+</body>
+<script type="text/javascript">
+	function result()
+	{
+		var value =document.getElementById("div").value;
+		if (value % 100 == 0)
+	{
+		document.getElementById("money").innerHTML = "AMOUNT IS ACCEPTED";
+	}
+	else
+	{
+		document.getElementById("money").innerHTML = "AMOUNT IS NOT ACCEPTED"
+	}
+   }
+</script>
+</html>
