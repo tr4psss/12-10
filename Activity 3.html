@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arcenal, Johnrey</title>
+</head>
+<body>
+		<label>ENTER GRADE:</label>
+		<input type="text" id="grade">
+		<input type="button" value="Submit" name="" onclick="AICS()">
+		<h1>REMARK: </h1><h1 id="grades2"></h1>
+<script type="text/javascript">
+	function AICS()
+	{
+		var grades = Number(document.getElementById("grade").value);
+		if(isNaN(grades)==false)
+		{
+			if(grades > 94)
+			{
+				document.getElementById("grades2").innerHTML = "Excellence";
+			}
+			else if(grades > 84 && grades < 95)
+			{
+				document.getElementById("grades2").innerHTML = "Very Good";
+			}
+			else if(grades > 79 && grades < 85)
+			{
+				document.getElementById("grades2").innerHTML = "Good";
+			}
+			else if(grades > 74 && grades < 81)
+			{
+				document.getElementById("grades2").innerHTML = "Nice";
+			}
+			else if(grades > 64 && grades < 75)
+			{
+				document.getElementById("grades2").innerHTML = "Poor";
+			}
+			else
+			{
+			document.getElementById("grades2").innerHTML = "Invalid";
+			}
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arcenal, Johnrey</title>
+</head>
+<body>
+	<label>Amount:</label>
+	<input type="text" id="money">
+	<input type="button" value="350ml" onclick="vendo1()">
+	<input type="button" value="450ml" onclick="vendo2()">
+	<input type="button" value="650ml" onclick="vendo3()">
+	<h1 id="answer"></h1>
+</center>
+<script type="text/javascript">
+	function vendo3()
+	{
+		var Tr4ps = document.getElementById("money").value;
+		var trial;
+		if(Tr4ps >= 50)
+		{
+			trial = Tr4ps - 50
+			document.getElementById("answer").innerHTML = "ENJOY YOUR COFFEE, " + trial + " pesos is your change";
+		}
+		else
+		{
+			alert("Insufficient Amount!")
+		}
+	}
+	function vendo2()
+	{
+		var Tr4ps = document.getElementById("money").value;
+		var trial;
+		if(Tr4ps >= 30)
+		{
+			trial = Tr4ps - 30
+			document.getElementById("answer").innerHTML = "ENJOY YOUR COFFEE, " + trial + " pesos is your change";
+		}
+		else
+		{
+			alert("Insufficient Amount!")
+		}
+	}
+	function vendo1()
+	{
+		var Tr4ps = document.getElementById("money").value;
+		var trial;
+		if(Tr4ps >= 25)
+		{
+			trial = Tr4ps - 25
+			document.getElementById("answer").innerHTML = "ENJOY YOUR COFFEE, " + trial + " pesos is your change";
+		}
+		else
+		{
+			alert("Insufficient Amount!")
+		}
+	}
+</script>
+</body>
+</html>
